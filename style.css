@@ -1,0 +1,147 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  /* min-height: 100%; */
+  background-color: #dffbff;
+
+  overflow-x: hidden;
+}
+
+a {
+  color: #67748e;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+.mxr-1 {
+  margin-right: 7.5px;
+}
+
+.text-gray {
+  color: #67748e;
+}
+
+.place-center {
+  display: grid;
+  place-items: center;
+}
+
+#main-side-bar {
+  height: 100vh;
+  width: 300px;
+  position: fixed;
+  display: grid;
+  place-items: center;
+  z-index: 100;
+}
+
+.main-side-bar {
+  height: 95%;
+  width: 100%;
+  border-right: 1px solid #a7a7a7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  /* background: palevioletred; */
+}
+
+.logo {
+  height: 100px;
+  width: 100px;
+  /* background-color: aquamarine; */
+  display: grid;
+  place-items: center;
+}
+
+.side-bar-list {
+  height: 500px;
+  width: 200px;
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.side-bar-links {
+  height: 200px;
+  width: 80%;
+  /* background-color: #dffbff; */
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+
+.side-bar-links li {
+  margin-top: 15px;
+  height: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  /* background-color: #a7a7a7; */
+  border-radius: 10px;
+  padding: 5px;
+  transition: all 0.6s ease-in;
+}
+
+.side-bar-links li:hover {
+  box-shadow: 2px 7px 50px -15px rgba(0, 0, 0, 0.75);
+}
+
+.current {
+  background: #d8f8fd;
+  box-shadow: 2px 7px 50px -15px rgba(0, 0, 0, 0.75);
+}
+
+.current a {
+  color: black;
+}
+
+.side-bar-footer {
+  height: 100px;
+  width: 200px;
+}
+
+.contact-us {
+  height: 70px;
+  width: 100%;
+}
+
+.contact-us-social {
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.contact-us-local {
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-sign {
+  height: 30px;
+  width: 100%;
+}
+
+.main-content {
+  height: 100vh;
+  width: calc(100vw - 300px);
+  /* position: fixed; */
+  float: right;
+  display: grid;
+  place-items: center;
+  background: rebeccapurple;
+}
